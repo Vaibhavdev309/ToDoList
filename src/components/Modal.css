@@ -1,0 +1,9 @@
+.modal.open {
+  display: flex;
+}
+.task.open {
+  display: flex;
+}
+.task.close {
+  display: none;
+}
