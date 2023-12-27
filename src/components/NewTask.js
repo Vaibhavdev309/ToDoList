@@ -13,12 +13,14 @@ const NewTask = () => {
   };
 
   return (
-    <div
-      className="h-[48px] w-full md:w-[228px] flex items-center justify-center text-[18px] font-[600] w-60% text-white bg-[#3D00C0] rounded-[15px] text-center mt-2 
+    <div className="cursor-pointer">
+      <div
+        className="h-[48px] w-full md:w-[228px] flex items-center justify-center text-[18px] font-[600] w-60% text-white bg-[#3D00C0] rounded-[15px] text-center mt-2 cursor-pointer
       mb-2"
-      onClick={onCreateTask}
-    >
-      Create New Task
+        onClick={onCreateTask}
+      >
+        Create New Task
+      </div>
       {createTask && (
         <CreateTaskModal isOpen={createTask} onClose={onCloseCreate} />
       )}
